@@ -22,14 +22,14 @@
 | origin    | enum      | CLIENT; WEB; ADMIN                            |
 | timestamp | timestamp | Momento de la petición                        |
 | copias    | int       | Copias restantes en el momento de la petición |
-### Tabla configuración
+### Tabla stats
 
 | Campo | Tipo    | Descripción                      |
 | ----- | ------- | -------------------------------- |
 | clave | varchar | Clave del valor de configuración |
 | valor | varchar | Valor de la configuración        |
 
-#### Configuración
+#### Datos en la tabla de estadísticas.
 
 | Clave         | Valor                                      |
 | ------------- | ------------------------------------------ |
