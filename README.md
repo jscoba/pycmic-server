@@ -7,7 +7,7 @@ Este servicio se encarga de recoger información de la impresora sobre los usuar
 Además puede usarse como servicio de autenticación para que solo los usuarios autorizados puedan imprimir en ordenadores públicos conectados a la impresora.
 
 ## Documentación para IV
-La descripción de las tareas realizadas puede encontrarse [aquí](documentacion).
+La descripción de las tareas realizadas puede encontrarse [aquí](docs).
 
 
 ## Licencia
