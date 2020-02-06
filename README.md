@@ -1,5 +1,7 @@
 # pycmic-server
 
+[![Build Status](https://travis-ci.org/jscoba/pycmic-server.svg?branch=master)](https://travis-ci.org/jscoba/pycmic-server) 
+
 Servicio de contabilidad de fotocopias y autorización para fotocopiadoras de la gama MP C5503 de Ricoh
 
 Este servicio se encarga de recoger información de la impresora sobre los usuarios del sistema, las copias que estos utilizan y las copias restantes de los mismos sin darles permisos de administración a la máquina.
