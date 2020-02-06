@@ -8,6 +8,26 @@ Este servicio se encarga de recoger información de la impresora sobre los usuar
 
 Además puede usarse como servicio de autenticación para que solo los usuarios autorizados puedan imprimir en ordenadores públicos conectados a la impresora.
 
+## Instalación
+
+Para instalar la aplicación sigue los siguientes pasos:
+
+1. Clona el repositorio
+2. Si quieres puedes instalar un virtualenv de python para aislar el entorno de trabajo
+3. `make install`
+4. Cambia los valores de `instance/config.py` a los que se ajusten a tu [configuración](docs/Valores_de_configuración.md).
+5. Ejecuta el servidor con `make start`
+
+Si quieres configurar la aplicación para que corra en la nube (Heroku, Azure, Docker) sigue los pasos que encontrarás en la carpeta de documentación.
+
+## Tests
+
+Puedes ejecutar los test de la aplicación ejecutando `make test`
+
+## Logs y depuración
+
+La aplicación saca los registros por consola. Además guarda los registros en el directorio `instance` que se crea al instalar la aplicación y ejecutarla por primera vez. En ellos encontrarás información sobre los accesos realizados y posibles errores de ejecución. Si tienes que abrir un issue por algún problema no olvides adjuntar la parte del log necesaria para poder identificar el problema.
+
 ## Documentación para IV
 La descripción de las tareas realizadas puede encontrarse [aquí](docs).
 
