@@ -9,3 +9,4 @@ WEB_KEY = 'webkey'
 
 SECRET_KEY='clavemuysecreta',
 DEBUG = True
+LOG = True

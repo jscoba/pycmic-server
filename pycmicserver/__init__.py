@@ -35,7 +35,7 @@ def create_app(test_config=None):
     app.register_blueprint(views.bp)
 
     # Configuración del log a archivos
-    if test_config is None:
+    if test_config is None and app.config['LOG']:
         handler = RotatingFileHandler(os.path.join(app.instance_path, 'pycmiclog.txt'), maxBytes=10000, backupCount=1)
         handler.setLevel(logging.INFO)
         app.logger.addHandler(handler)
