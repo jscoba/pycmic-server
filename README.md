@@ -1,6 +1,6 @@
 # pycmic-server
 
-[![Build Status](https://travis-ci.org/jscoba/pycmic-server.svg?branch=master)](https://travis-ci.org/jscoba/pycmic-server) 
+[![Build Status](https://travis-ci.org/jscoba/pycmic-server.svg?branch=master)](https://travis-ci.org/jscoba/pycmic-server) [![CircleCI](https://circleci.com/gh/jscoba/pycmic-server.svg?style=svg)](https://circleci.com/gh/jscoba/pycmic-server) 
 
 Servicio de contabilidad de fotocopias y autorización para fotocopiadoras de la gama MP C5503 de Ricoh
 

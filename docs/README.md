@@ -12,3 +12,4 @@
 ## Documentación para Infraestructuras Virtuales
 
 - [Documentación para el hito 1](hito1.md)
+- [Documentación para el hito 2](hito2.md) 
