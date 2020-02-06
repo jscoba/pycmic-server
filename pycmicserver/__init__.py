@@ -13,6 +13,7 @@ def create_app(test_config=None):
         DATABASE=os.path.join(app.instance_path, 'pycmic_server.sqlite'),
         # Activamos el modo desarrollo de momento
         DEBUG=True,
+        LOG=False
     )
 
     if test_config is None:
