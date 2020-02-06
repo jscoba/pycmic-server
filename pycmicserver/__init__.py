@@ -1,5 +1,5 @@
 
-from flask import Flask
+from flask import Flask, jsonify
 import os
 
 
@@ -29,4 +29,11 @@ def create_app(test_config=None):
     from . import db
     db.init_app(app)
 
+    @app.route('/status')
+    def status():
+        data = {
+            'status': 'ok'
+        }
+        return jsonify(data)
+        
     return app
