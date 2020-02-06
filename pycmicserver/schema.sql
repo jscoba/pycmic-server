@@ -8,7 +8,8 @@ CREATE TABLE usuarios (
     usercode INTEGER UNIQUE NOT NULL,
     copias_max INTEGER,
     copias_used INTEGER, 
-    last_login INTEGER
+    last_login INTEGER,
+    dni TEXT
 );
 
 CREATE TABLE trazabilidad (

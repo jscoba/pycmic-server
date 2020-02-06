@@ -12,6 +12,7 @@
 | copias_max  | int       | Número máximo de pasos                |
 | copias_used | int       | Número de pasos usados                |
 | last_login  | timestamp | Último inicio de sesión               |
+| dni         | text      | Usuario en la web del centro          |
 
 ### Tabla trazabilidad
 
