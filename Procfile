@@ -1,1 +1,1 @@
-web: make install && make start #Iniciar la bd y ejecutar la app
+web: make install && make start_heroku #Iniciar la bd y ejecutar la app
