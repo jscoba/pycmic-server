@@ -1,0 +1,35 @@
+- name: Desplegar pycmic-server
+  hosts: all
+  become: true
+  become_method: sudo
+
+  vars:
+    repositorio: https://github.com/jscoba/pycmic-server.git
+    directorio: /home/vagrant/pycmic-server/
+
+  tasks:
+    - name: Instalar paquetes basicos
+      apt: 
+        name: ['git', 'make', 'python3-pip']
+        update_cache: yes
+        state: present
+
+    - name: Enlazar pip a pip3
+      file:
+        src: "/usr/bin/pip3"
+        dest: "/usr/bin/pip"
+        state: link
+
+    - name: Clonar repositorio
+      git: repo='{{ repositorio }}' dest='{{ directorio }}'
+
+    - name: Instalar dependencias
+      make:
+        chdir: "{{ directorio }}"
+        target: install
+
+    - name: Copiar la configuración del servicio
+      template: src=pycmic-server.conf.j2 dest=/etc/systemd/system/pycmic-server.service
+
+    - name: Asegurarnos que el servicio está funcionando
+      service: name=pycmic-server state=started

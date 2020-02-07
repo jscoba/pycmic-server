@@ -34,6 +34,12 @@ Esta aplicación está preparada para ser ejecutada utilizando contenedores dock
 
 Puedes descargar la imagen desde el Docker Hub aquí: https://hub.docker.com/r/jscoba/pycmic-server o puedes construirla en local ejecutando `make build_docker`
 
+## Vagrant
+
+Esta aplicación puede ejecutarse como máquina virtual usando `vagrant` . Para ello puedes seguir las instrucciones desde VagrantCloud (https://app.vagrantup.com/jscoba/boxes/pycmic-server) o desde el apartado de releases de este repositorio (https://github.com/jscoba/pycmic-server/releases/tag/v1.0)
+
+También puedes crear tu propia imagen ejecutando `make start_vm` desde la raiz de este repositorio. Esto creará la máquina virtual y la configurará de forma automática. Tendrás que tener instalado `vagrant` y `ansible` en tu máquina local.
+
 ## Documentación para IV
 La descripción de las tareas realizadas puede encontrarse [aquí](docs).
 
@@ -42,6 +48,8 @@ buildtool: Makefile
 Despliegue: https://pycmic-server.herokuapp.com/
 
 Contenedor: https://pycmic-server.azurewebsites.net/
+
+Provision: provision/playbook.yml
 
 
 ## Licencia

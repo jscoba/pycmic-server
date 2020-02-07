@@ -20,4 +20,7 @@ install: install_dependencies init_db
 build_docker:
 	docker build --tag pycmic-server .
 
+start_vm:
+	vagrant up
+
 

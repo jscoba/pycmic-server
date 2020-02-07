@@ -15,3 +15,6 @@
 - [Documentación para el hito 1](hito1.md)
 - [Documentación para el hito 2](hito2.md) 
 - [Documentación para el hito 3](hito3.md) 
+- [Documentación para el hito 4](hito4.md) 
+- [Documentación para el hito 5](hito5.md) 
+- [Documentación para el hito 6](hito6.md) 
