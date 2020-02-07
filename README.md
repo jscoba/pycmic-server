@@ -42,7 +42,7 @@ También puedes crear tu propia imagen ejecutando `make start_vm` desde la raiz 
 
 ## Despliegue en Azure
 
-La aplicación incluye en la carpeta `despliegue/` ficheros para desplegar de forma automática la aplicación como una máquina virtual de Azure. Puedes seguir las instrucciones que se encuentran [aquí](docs/hito7.md) para configurar tus credenciales de azure y luego ejecutar `make azure_up` para desplegar la máquina virtual.
+La aplicación incluye en la carpeta `despliegue/` ficheros para desplegar de forma automática la aplicación como una máquina virtual de Azure. Puedes seguir las instrucciones que se encuentran en el último link de [aquí](docs/) para configurar tus credenciales de azure y luego ejecutar `make azure_up` para desplegar la máquina virtual.
 
 ## Documentación para IV
 La descripción de las tareas realizadas puede encontrarse [aquí](docs).
