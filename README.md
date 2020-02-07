@@ -31,6 +31,8 @@ La aplicación saca los registros por consola. Además guarda los registros en e
 ## Documentación para IV
 La descripción de las tareas realizadas puede encontrarse [aquí](docs).
 
+buildtool: Makefile
+
 
 ## Licencia
 

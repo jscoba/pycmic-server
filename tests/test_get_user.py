@@ -1,5 +1,10 @@
 """Tests que comprueban la ruta get_user pertenecientes a la historia
-de usuario cliente"""
+de usuario cliente
+El usuario pide su usuario introduciendo su código de usuario en el cliente,
+que solicita al servidor la información. Si no existe se responde un no encontrado
+por lo que el cliente debería de mostrar un error y pedir la información otra vez.
+
+"""
 
 
 """Pedimos un usuario que existe y nos devuelve su información."""

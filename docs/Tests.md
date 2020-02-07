@@ -1,0 +1,3 @@
+# Pycmic-server - Tests
+
+En la carpeta de `tests` se pueden encontrar los test de la aplicación. Cada archivo se corresponde a una ruta distinta de la aplicación. Dentro de cada archivo se puede encontrar la documentación de que está testando exactamente. Cada archivo tiene, como es normal en el desarrollo basado en tests, varios casos de test para cada ruta, comprobando tanto las respuestas correctas y esperadas como las excepciones y errores.

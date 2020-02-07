@@ -1,9 +1,6 @@
 # Clase: Csv_parser
 #   init('nombre de fichero csv') Abre el CSV y lo parsea
-#   set_user(username)
-#   user_volume(): Da el volumen de copias del usuario
-#   user_used(): Da el numero de copias gastadas del
-#   user(): Develve
+#   return_users() Devuelve una lista de diccionarios con los usuarios del CSV
 
 class Csv_parser:
     filename=""

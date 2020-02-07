@@ -6,6 +6,7 @@
 - [Documentación sobre los valores de configuración](Valores_de_configuración.md)
 - [Documentación sobre la organización de la base de datos y las rutas de la API](Esquema_de_base_de_datos_y_rutas_de_API.md)
 - [Hoja sobre tareas pendientes](TODO.md)
+- [Tests](Tests.md)
 
 
 
@@ -13,3 +14,4 @@
 
 - [Documentación para el hito 1](hito1.md)
 - [Documentación para el hito 2](hito2.md) 
+- [Documentación para el hito 3](hito3.md) 

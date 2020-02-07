@@ -1,5 +1,10 @@
 """Tests que comprueban la ruta get_users pertenecientes a la historia
-de usuario administrador"""
+de usuario administrador
+
+Esta función permite al administrador guardar una copia de seguridad de los
+usuarios así como conocer estadísticas de impresión de todos los usuarios
+a la vez.
+"""
 
 
 """Pedimos la lista de todos los usuarios."""
