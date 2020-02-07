@@ -1,13 +1,13 @@
 # TODO
 
-- [ ] Infraestructura de Flask
-- [ ] Sistema de testing
+- [x] Infraestructura de Flask
+- [x] Sistema de testing
 - [ ] Inclusión de la librería de la fotocopiadora
-- [ ] Esquema de base de datos
-- [ ] Sistema de logging de python
-- [ ] Rutas de cliente
-- [ ] Rutas de administrador
-- [ ] Sistema de autenticación
+- [x] Esquema de base de datos
+- [x] Sistema de logging de python
+- [x] Rutas de cliente
+- [x] Rutas de administrador
+- [x] Sistema de autenticación
 - [ ] Utilidad de trazabilidad
 - [ ] Utilidad cli para compatibilidad con cron
-- [ ] Externalización de configuración
+- [x] Externalización de configuración
