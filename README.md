@@ -40,6 +40,10 @@ Esta aplicación puede ejecutarse como máquina virtual usando `vagrant` . Para 
 
 También puedes crear tu propia imagen ejecutando `make start_vm` desde la raiz de este repositorio. Esto creará la máquina virtual y la configurará de forma automática. Tendrás que tener instalado `vagrant` y `ansible` en tu máquina local.
 
+## Despliegue en Azure
+
+La aplicación incluye en la carpeta `despliegue/` ficheros para desplegar de forma automática la aplicación como una máquina virtual de Azure. Puedes seguir las instrucciones que se encuentran [aquí](docs/hito7.md) para configurar tus credenciales de azure y luego ejecutar `make azure_up` para desplegar la máquina virtual.
+
 ## Documentación para IV
 La descripción de las tareas realizadas puede encontrarse [aquí](docs).
 
@@ -50,6 +54,10 @@ Despliegue: https://pycmic-server.herokuapp.com/
 Contenedor: https://pycmic-server.azurewebsites.net/
 
 Provision: provision/playbook.yml
+
+Despliegue final: 104.42.190.206
+
+Se puede acceder a la aplicación mediante el puerto 5000 de la IP arriba indicada
 
 
 ## Licencia

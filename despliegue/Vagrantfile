@@ -1,0 +1,40 @@
+# Require the Azure provider plugin
+require 'vagrant-azure'
+# Require el plugin de variables de entorno
+require 'vagrant-env'
+
+# Crear y configurar la máquina virtual
+Vagrant.configure('2') do |config|
+
+  # Use dummy Azure box
+  config.vm.box = 'azure-dummy'
+  # Habilitar el uso del fichero .env
+  config.env.enable
+
+  # Specify SSH key
+  config.ssh.private_key_path = '~/.ssh/id_rsa'
+
+  # Configure the Azure provider
+  config.vm.provider 'azure' do |az, override|
+    # Desde el archivo .env sacamos la configuración de Azure
+    az.tenant_id = ENV['AZURE_TENANT_ID']
+    az.client_id = ENV['AZURE_CLIENT_ID']
+    az.client_secret = ENV['AZURE_CLIENT_SECRET']
+    az.subscription_id = ENV['AZURE_SUBSCRIPTION_ID']
+
+    # Parametros de la máquina virtual
+    az.vm_name = 'pycmicserver'
+    az.vm_size = 'Standard_B1s'
+    # Imagen base del sistema operativo
+    az.vm_image_urn = 'Canonical:UbuntuServer:18.04-LTS:latest'
+    az.resource_group_name = 'vagrant'
+    # Permitir acceso desde el exterior a los puertos de ssh y donde se sirve la app
+    az.tcp_endpoints = ['22', '5000']
+  end # config.vm.provider 'azure'
+
+  # Provisionamiento mediante ansible para descargar y configurar la aplicacion
+  config.vm.provision 'ansible' do |ansible|
+    ansible.playbook = 'playbook.yml'
+    ansible.verbose = 'v'
+  end
+end # Vagrant.configure

@@ -23,4 +23,12 @@ build_docker:
 start_vm:
 	vagrant up
 
+azure_up:
+	cd despliegue
+	vagrant box add azure-dummy https://github.com/azure/vagrant-azure/raw/v2.0/dummy.box --provider azure
+	vagrant plugin install vagrant-azure
+	vagrant plugin install vagrant-env
+	vagrant up
+	vagrant ssh-config
+
 
