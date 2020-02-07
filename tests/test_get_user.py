@@ -1,4 +1,3 @@
-
 """Tests que comprueban la ruta get_user pertenecientes a la historia
 de usuario cliente"""
 

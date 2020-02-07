@@ -11,3 +11,12 @@ def autenticacion(request, app):
     if request.args.get('a') == app.config['WEB_KEY']:
         r.append('WEB')
     return r
+
+def incrementa_valor(clave, db):
+    db.execute("UPDATE stats SET valor = valor + 1 WHERE clave = ?", (clave,))
+    db.commit()
+
+
+def user_in_db(usercode, db):
+    r = db.execute("SELECT usercode FROM usuarios WHERE usercode = ?", (usercode,)).fetchone()
+    return r is not None 
