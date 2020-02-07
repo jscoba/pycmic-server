@@ -32,4 +32,4 @@
       template: src=pycmic-server.conf.j2 dest=/etc/systemd/system/pycmic-server.service
 
     - name: Asegurarnos que el servicio está funcionando
-      service: name=pycmic-server state=started
+      service: name=pycmic-server state=started enabled=yes
