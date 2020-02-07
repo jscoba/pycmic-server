@@ -8,7 +8,7 @@ start:
 	flask run
 
 start_heroku:
-	gunicorn "pycmicserver:create_app()" --bind 0.0.0.0:$PORT
+	gunicorn "pycmicserver:create_app()" --bind 0.0.0.0:${PORT}
 
 test:
 	python -m pytest
