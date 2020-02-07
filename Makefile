@@ -11,7 +11,7 @@ test:
 	python -m pytest
 
 install: install_dependencies init_db
-	mkdir instance
+	mkdir -p instance
 	cp pycmicserver/config_example.py instance/config.py
 
 
