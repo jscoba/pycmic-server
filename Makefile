@@ -17,4 +17,7 @@ install: install_dependencies init_db
 	mkdir -p instance
 	cp pycmicserver/config_example.py instance/config.py
 
+build_docker:
+	docker build --tag pycmic-server .
+
 

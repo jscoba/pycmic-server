@@ -28,12 +28,20 @@ Puedes ejecutar los test de la aplicación ejecutando `make test`
 
 La aplicación saca los registros por consola. Además guarda los registros en el directorio `instance` que se crea al instalar la aplicación y ejecutarla por primera vez. En ellos encontrarás información sobre los accesos realizados y posibles errores de ejecución. Si tienes que abrir un issue por algún problema no olvides adjuntar la parte del log necesaria para poder identificar el problema.
 
+## Docker
+
+Esta aplicación está preparada para ser ejecutada utilizando contenedores docker.
+
+Puedes descargar la imagen desde el Docker Hub aquí: https://hub.docker.com/r/jscoba/pycmic-server o puedes construirla en local ejecutando `make build_docker`
+
 ## Documentación para IV
 La descripción de las tareas realizadas puede encontrarse [aquí](docs).
 
 buildtool: Makefile
 
 Despliegue: https://pycmic-server.herokuapp.com/
+
+Contenedor: https://pycmic-server.azurewebsites.net/
 
 
 ## Licencia
